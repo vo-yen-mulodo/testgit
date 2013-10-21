@@ -8,4 +8,12 @@ class Test_Model_Login extends TestCase
 	{
 		$this->assertEquals(1, 1);
 	}
+	
+	/**
+	 * @group App
+	 */
+	public function test_abc()
+	{
+		$this->assertEquals(2, 2);
+	}
 }
