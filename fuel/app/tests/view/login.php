@@ -11,8 +11,8 @@ class Login extends PHPUnit_Extensions_Selenium2TestCase
     	$this->setHost('localhost');
     	$this->setPort(4444);
         $this->setBrowser('firefox');
-        $this->setBrowserUrl('http://localhost/testgit/htdocs/');
-       // $this->setBrowserUrl('http://localhost:8080/index.php/');
+     //   $this->setBrowserUrl('http://localhost/testgit/htdocs/');
+        $this->setBrowserUrl('http://localhost/index.php/');
     }
  
     public function testTitle()
