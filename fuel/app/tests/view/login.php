@@ -10,7 +10,7 @@ class Login extends PHPUnit_Extensions_Selenium2TestCase
     {
         $this->setBrowser('firefox');
      //   $this->setBrowserUrl('http://localhost:8888/testgit/htdocs/');
-        $this->setBrowserUrl('http://localhost/testgit/htdocs/');
+        $this->setBrowserUrl('http://localhost:8080/index.php/');
     }
  
     public function testTitle()
