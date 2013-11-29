@@ -1,7 +1,4 @@
 <?php
-echo '<pre>';
-var_dump('aaaa');
-echo '</pre>';die;
 /**
  * Fuel is a fast, lightweight, community driven PHP5 framework.
  *

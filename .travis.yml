@@ -10,17 +10,17 @@ env:
 before_script:
   - pwd
 #  - mysql -e 'create database fow;'
-#  - sudo ./setup_fpm_and_nginx_for_travis.sh
-#  - pear config-set auto_discover 1
-#  - pear install pear.phpunit.de/PHPUnit
-#  - pear install phpunit/PHPUnit_Selenium
-#  - sh -e /etc/init.d/xvfb start
-#  - export DISPLAY=:99.0
-#  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar
-#  - java -jar selenium-server-standalone-2.31.0.jar > /dev/null &
-#  - sleep 5
+  - sudo ./setup_fpm_and_nginx_for_travis.sh
+  - pear config-set auto_discover 1
+  - pear install pear.phpunit.de/PHPUnit
+  - pear install phpunit/PHPUnit_Selenium
+  - sh -e /etc/init.d/xvfb start
+  - export DISPLAY=:99.0
+  - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar
+  - java -jar selenium-server-standalone-2.31.0.jar > /dev/null &
+  - sleep 5
 #  - sudo chmod 777 /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/user
 #  - sudo chmod 777 -R /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/post
 script:
 #  - php oil refine migrate:up
-#  - php oil test
+  - php oil test
