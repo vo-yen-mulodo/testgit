@@ -15,6 +15,7 @@ before_script:
   - wget http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar
   - java -jar selenium-server-standalone-2.31.0.jar > /dev/null &
   - sleep 5
+  - which pear
 #  - sudo chmod 777 /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/user
 #  - sudo chmod 777 -R /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/post
 script:
