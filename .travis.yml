@@ -1,17 +1,17 @@
 language: php
 php:
-  - "5.5"
-  - "5.4"
+#  - "5.5"
+#  - "5.4"
   - "5.3"
 services:
   - mysql
 env:
   - DB=mysql
 before_script:
-  - mysql -e 'create database fow;'
+#  - mysql -e 'create database fow;'
   - sudo ./setup_fpm_and_nginx_for_travis.sh
-  - sudo chmod 777 /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/user
-  - sudo chmod 777 -R /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/post
+#  - sudo chmod 777 /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/user
+#  - sudo chmod 777 -R /home/travis/build/mulodo-vietnam/fow_api/htdocs/upload/post
 script:
-  - php oil refine migrate:up
+#  - php oil refine migrate:up
   - php oil test
