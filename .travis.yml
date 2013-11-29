@@ -10,6 +10,8 @@ env:
 before_script:
 #  - mysql -e 'create database fow;'
   - sudo ./setup_fpm_and_nginx_for_travis.sh
+  - pear config-set auto_discover 1
+  - pear install pear.phpunit.de/PHPUnit
   - pear install phpunit/PHPUnit_Selenium
   - sh -e /etc/init.d/xvfb start
   - export DISPLAY=:99.0
